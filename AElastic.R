@@ -72,7 +72,7 @@ legend("topright", legend = c("0.2","0.5","0.8"),
        pch = 18, col = c("red","blue","green"))
 }
 #
-PP(ft, ft1, ft2)
+PP(c1, c2, c3)
 #
 dff <- function(x) { 
 # Extract features from elastic net crossvalidated model
