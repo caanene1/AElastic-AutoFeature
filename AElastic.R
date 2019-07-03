@@ -99,4 +99,4 @@ return(cvres)
 # Set data to have lable in first column, rest must be numeric columns
 df <- df
 # Run 
-Res <- AElastic(FIT,"binomial")
+Res <- AElastic(df,"binomial")
