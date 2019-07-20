@@ -89,6 +89,8 @@ as.data.frame(as.matrix(coef(x,
 cvres <- do.call(cbind, list(dff(c1), dff(c2), dff(c3))) %>%
         setNames(., c("0.2min", "0.2se", "0.5min", "0.5se", 
                         "0.8min", "0.8se"))
+cvres$sums <- rowSums(cvres, na.rm = FALSE, dims = 1)
+cvres <- subset(cvres, !sums == 0)
 return(cvres)
 }
 
